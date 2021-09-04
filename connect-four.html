@@ -1,0 +1,112 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ryan Boals</title>
+
+    <!-- Link to stylesheet -->
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    
+    <!-- link to google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <!-- div that contains the entire body -->
+    <div class="grid-container">
+
+        <!-- top row of site -->
+        <div class="first-row">
+
+            <!-- top left site name/logo-->
+            <a class="logo" id="logo" href="index.html">Ryan Boals</a>
+
+            <!-- top right navigation menu -->
+            <nav>
+                <ul>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a style="color: #7289da; font-weight: bold;" href="projects.html">PROJECTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!-- main content area of site -->
+        <div class="second-row">
+
+            <!-- create a flex box that holds all of the cards -->
+            <div class="project-container">
+                
+                
+                <div class="project-header-container">
+                    <img src="images/connectfour-large.png" class="project-img">
+                    <h2 class="project-header">CONNECT FOUR</h2>
+                    <ul class="lang-list project-lang-list">
+                        <li class="lang-item">Java</li>
+                        <li class="lang-item">Java Swing</li>
+                    </ul>
+
+                    <div class="contact-card-container">
+                        <div class="contact-card">
+                            <a class="contact-link" href="play-files/connect-four.jar" download>
+                                <h4 class="contact-title">PLAY</h4>
+                            </a>
+                        </div>
+    
+                        <div class="contact-card">
+                            <a class="contact-link" href="https://github.com/ryanb4/site-projects/tree/master/connectfour-tictactoe/src/a7" target="_blank">
+                                <h4 class="contact-title">SOURCE</h4>
+                            </a>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="project-description-container">
+                    
+                    <h3>START THE GAME</h3>
+                    
+                    <p>
+                        First, you will need the jar file to play the game. Download the jar file by clicking the "play" button. Ensure you
+                        have the lastest version of java installed.
+                        Then, open the terminal and type:
+                    </p>
+                    
+                    <code>java -jar connect-four.jar</code>
+                    
+                    <p>Note that <code>connect-four.jar</code> should be replaced by the path to the jar file on your machine.</p>
+                    
+                    <h3>HOW TO PLAY</h3>
+
+                    <p>
+                        To play Connect Four, make sure you have a friend with you. The color that goes first will appear in the bottom left corner.
+                        Each column becomes highlighted when the mouse hovers over it. Left click on the mouse to drop your piece to 
+                        the bottom of the highlighted column. Then, it will be the next person's turn and so on. The first person to get 
+                        four of their pieces in a row (vertical, horizontal, or diagonal) wins! The winner will be indicated in the bottom left 
+                        hand corner and the winning pieces will become highlighted. To play again, hit the restart button. 
+                    </p>
+
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+
+
+</html>

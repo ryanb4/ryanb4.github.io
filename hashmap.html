@@ -1,0 +1,103 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HashMap - Ryan Boals</title>
+
+    <!-- Link to stylesheet -->
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    
+    <!-- link to google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <!-- div that contains the entire body -->
+    <div class="grid-container">
+
+        <!-- top row of site -->
+        <div class="first-row">
+
+            <!-- top left site name/logo-->
+            <a class="logo" id="logo" href="index.html">Ryan Boals</a>
+
+            <!-- top right navigation menu -->
+            <nav>
+                <ul>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a style="color: #7289da; font-weight: bold;" href="projects.html">PROJECTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!-- main content area of site -->
+        <div class="second-row">
+
+            <!-- create a flex box that holds all of the cards -->
+            <div class="project-container">
+                
+                
+                <div class="project-header-container">
+                    <img src="images/hashmap-large.png" class="project-img">
+                    <h2 class="project-header">HASHMAP</h2>
+                    <ul class="lang-list project-lang-list">
+                        <li class="lang-item">Java</li>
+                    </ul>
+
+                    <div class="contact-card-container">
+                        <div class="contact-card">
+                            <a class="contact-link" href="https://github.com/ryanb4/site-projects/tree/master/hashmap/src/assignment3_f20" target="_blank">
+                                <h4 class="contact-title">SOURCE</h4>
+                            </a>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="project-description-container">
+
+                    <h3>OVERVIEW</h3>
+
+                    <p>
+                        This is an implemenation of a basic Hash Map data structure that hashes strings into a table, ensures the keys
+                        are unique, and provides the user with O(1) time for access operations. This implemenation has faster access times
+                        than the TreeMap implemenation, but it cannot return all of the keys in sorted order without using an additional
+                        sort function. Therefore, the Hash Map will also provide a function to return all of the keys in in an unsorted array.
+                    </p>
+
+                    <p>
+                        Also included are methods to alter the hash table, such as lambda and extend. The method lambda returns the lambda
+                        value for the table (the ratio bewtween the table size and the number of keys stored). Lambda is used to determine when 
+                        the table size should be extended to avoid collisions. The mehtod extend thus doubles the size of the hash table and 
+                        rehashes the keys using the new table size.
+                    </p>
+
+                    <p>
+                        Chaining is used for collision management. When a key is hashed to the same location on the hash table as another key, the 
+                        new key is linked to the end of the old key. Therefore, this type of collison management means that no key will be 
+                        excluded from the hash table for being too full. However, the hash table will be extended when lambda becomes greater than
+                        or equal to one. This ensures that the access operations of the Hash Map are O(1).
+                    </p>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+
+
+</html>

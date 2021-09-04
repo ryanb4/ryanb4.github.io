@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dijkstra's Algorithm - Ryan Boals</title>
+
+    <!-- Link to stylesheet -->
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    
+    <!-- link to google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <!-- div that contains the entire body -->
+    <div class="grid-container">
+
+        <!-- top row of site -->
+        <div class="first-row">
+
+            <!-- top left site name/logo-->
+            <a class="logo" id="logo" href="index.html">Ryan Boals</a>
+
+            <!-- top right navigation menu -->
+            <nav>
+                <ul>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a style="color: #7289da; font-weight: bold;" href="projects.html">PROJECTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!-- main content area of site -->
+        <div class="second-row">
+
+            <!-- create a flex box that holds all of the cards -->
+            <div class="project-container">
+                
+                
+                <div class="project-header-container">
+                    <img src="images/dijkstra-large.png" class="project-img">
+                    <h2 class="project-header">DIJKSTRA'S ALGORITHM</h2>
+                    <ul class="lang-list project-lang-list">
+                        <li class="lang-item">Java</li>
+                    </ul>
+
+                    <div class="contact-card-container">
+                        <div class="contact-card">
+                            <a class="contact-link" href="https://github.com/ryanb4/site-projects/tree/master/dijkstra/src/assignment5_f20" target="_blank">
+                                <h4 class="contact-title">SOURCE</h4>
+                            </a>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="project-description-container">
+
+                    <h3>OVERVIEW</h3>
+
+                    <p>
+                        The first part of this project was to design and implement a directed graph data structure. This graph has directed
+                        and weighted edges between the verticies. This graph implementation also allows the user to provide each of the 
+                        verticies with a label.
+                    </p>
+
+                    <p>
+                        The second part of this project was to create an implementaion of Dijksra's shortest path algorithm by using the 
+                        previously built digraph. This algorithm takes in the weighted digraph and a single starting vertex as input, and 
+                        can produce information on the shortest path from the starting vertex to all of the other verticies. 
+                    </p>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+
+
+</html>

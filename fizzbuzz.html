@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ryan Boals</title>
+
+    <!-- Link to stylesheet -->
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    
+    <!-- link to google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <!-- div that contains the entire body -->
+    <div class="grid-container">
+
+        <!-- top row of site -->
+        <div class="first-row">
+
+            <!-- top left site name/logo-->
+            <a class="logo" id="logo" href="index.html">Ryan Boals</a>
+
+            <!-- top right navigation menu -->
+            <nav>
+                <ul>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a style="color: #7289da; font-weight: bold;" href="projects.html">PROJECTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!-- main content area of site -->
+        <div class="second-row">
+
+            <!-- create a flex box that holds all of the cards -->
+            <div class="project-container">
+                
+                
+                <div class="project-header-container">
+                    <img src="images/fizzbuzz-large.png" class="project-img">
+                    <h2 class="project-header">FIZZBUZZ</h2>
+                    <ul class="lang-list project-lang-list">
+                        <li class="lang-item">c</li>
+                    </ul>
+
+                    <div class="contact-card-container">
+                        <div class="contact-card">
+                            <a class="contact-link" href="play-files/FizzBuzz.c" download>
+                                <h4 class="contact-title">PLAY</h4>
+                            </a>
+                        </div>
+    
+                        <div class="contact-card">
+                            <a class="contact-link" href="https://github.com/ryanb4/site-projects/blob/master/FizzBuzz.c" target="_blank">
+                                <h4 class="contact-title">SOURCE</h4>
+                            </a>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="project-description-container">
+                    
+                    <h3>START THE GAME</h3>
+                    
+                    <p>
+                        First, you will need to create the executable c file to run the program. Download the c file by clicking the "play" button.
+                        Be sure to navigate to the folder where the c file was downloaded to.
+                        Then, open the terminal and type:
+                    </p>
+                    
+                    <code>gcc FizzBuzz.c -o FizzBuzz</code>
+
+                    <p>This command creates an executable file called FizzBuzz. Using the terminal once again, type:</p>
+
+                    <code>./FizzBuzz</code>
+                    
+                    <p>The output of the program should now appear on your terminal.</p>
+                    
+                    <h3>OVERVIEW</h3>
+
+                    <p>
+                        FizzBuzz is a simple program that outputs all integers from 1 to 100. However, any integer that is divisible by 3
+                        is replaced by "Fizz," any integer divisible by 5 is replaced by "Buzz," and any integer divisible by 3 and 5 is 
+                        replaced by "FizzBuzz." 
+                    </p>
+
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+
+
+</html>
