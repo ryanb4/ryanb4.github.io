@@ -1,35 +1,32 @@
-let textDiv = document.querySelector('.indexText');
-let text = "HELLO";
-let text2 = "HELLO my name is Ryan."
-let i = 0;
-let j = 10;
-let lever = 1; 
+var app = document.getElementById('app');
 
-function typeWriter() {
+var app2 = document.getElementById('app2');
 
-  if(lever == 1) {
-    if(i < text.length) {
-      textDiv.innerHTML += text.charAt(i);
-      i++;
-      j++;
-      setTimeout(typeWriter, 300);
-    } else {
-      lever = 0;
-    }
-  }
+var typewriter2 = new Typewriter(app2, {
+    autostart: true
+});
 
-}
+typewriter2.typeString('HELLO').start();
 
+var typewriter = new Typewriter(app, {
+    autostart: true
+});
 
-
-function spellCheck() {
-  
-  if (lever == 0) {
-    if (j < text2.length) {
-      textDiv.innerHTML += text2.charAt(j);
-    }
-  }
-
-
-}
-
+typewriter
+    .typeString('<strong><span style="font-size:20px;"><span style="color: #7289da;"><span style="letter-spacing: 5px;">HELLO</span></span></span></strong>')
+    .pauseFor(1000)
+    .typeString('<br>')
+    .typeString('<br>')
+    .typeString('I\'m Ryan,')
+    .pauseFor(500)
+    .typeString('<span style="color: #7289da;"> Computer Science</span> Student')
+    .pauseFor(250)
+    .typeString('<br>')
+    .typeString('at the University of North Carolina')
+    .pauseFor(250)
+    .typeString('<br>')
+    .typeString('<span style="color: #7289da;">Chaepl Hill</span>')
+    .pauseFor(2500)
+    .deleteChars(11)
+    .typeString('<strong><span style="color: #7289da;">Chapel Hill</span></strong>')
+    .start();

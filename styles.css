@@ -46,40 +46,6 @@ p {
     color: #e7efdd;
 }
 
-
-.indexText {
-    position: relative;
-    font-size: 1.125rem;
-}
-
-.indexText::after {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 85%;
-    border-right: 2px solid #e7efdd;
-    animation: blink 1s infinite ease;
-}
-
-@keyframes blink {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-
-
-
-
-
-
 .grid-container {
     display: grid;
     grid-template-rows: 5vh auto;
@@ -89,14 +55,11 @@ p {
 .first-row {
     display: flex;
     grid-row: 1 / 2;
-
     /* justify content aligns items along the main axis, align-items aligns items
     along the cross axis */
     justify-content: space-between;
     align-items: center;
-    
     letter-spacing: 5px;
-
 }
 
 .logo {
@@ -117,10 +80,8 @@ p {
 nav ul {
     display: flex;
     flex-direction: row;
-
     /* removes the bullet points from the list */
     list-style-type: none;
-
     margin: 0;
     padding: 0;
 }
@@ -182,26 +143,17 @@ nav a:hover {
     transition: 0.5s ease;
 }
 
-
-
 .third-row {
     display: flex;
     grid-row: 3 / 4;
     align-items: center;
 }
 
-
-
-
 .recent-work-text {
     margin: 0;
     padding-bottom: 30px;
     color: #e7efdd;
 }
-
-
-
-
 
 .card-container {
     max-width: 880px;
@@ -216,8 +168,7 @@ nav a:hover {
     background-color: rgb(61, 68, 83);
     margin: 10px;
     padding-bottom: 20px;
-    border-radius: 5px;
-    
+    border-radius: 5px;    
     box-shadow: rgb(0 0 0 / 30%) 0px 4px 40px 0px;
     transition: box-shadow 0.3s ease 0s;
     transition: transform .5s;
@@ -227,7 +178,6 @@ nav a:hover {
     box-shadow: rgb(0 0 0) 0px 4px 40px 0px;
     transform: translateY(-0.5%);
 }
-
 
 .card-img {
     width: 100%;
@@ -239,7 +189,7 @@ nav a:hover {
     letter-spacing: 5px;
     margin-top: 15px;
     margin-bottom: 25px;
-    }
+}
 
 .card-text {
     color: #e7efdd;
@@ -247,7 +197,6 @@ nav a:hover {
     padding-left: 10px;
     padding-right: 10px;
 }
-
 
 .lang-list {
     display: flex;
@@ -260,8 +209,6 @@ nav a:hover {
     color: rgb(190, 191, 195);
     padding-left: 10px;
     padding-right: 10px;
-
-    
 }
 
 .lang-item {
@@ -270,7 +217,6 @@ nav a:hover {
     border: 1px solid rgb(190, 191, 195);
     border-radius: 3px;
 }
-
 
 .project-container {
     max-width: 880px;
@@ -317,11 +263,6 @@ nav a:hover {
     font-weight: 600;
     text-decoration: none;
 }
-
-
-
-
-
 
 .about-container {
     max-width: 880px;
@@ -371,15 +312,12 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     max-width: 425px;
     min-height: 150px;
     background-color: rgb(61, 68, 83);
     padding-bottom: 10px;
     border-radius: 5px;
-    
     box-shadow: rgb(0 0 0 / 30%) 0px 4px 40px 0px;
-
     margin: 5px 10px 5px 0px;
 }
 
@@ -423,7 +361,6 @@ nav a:hover {
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 50px;  
-
     text-align: left;
     width: 100%;
 }
@@ -432,15 +369,12 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     max-width: 860px;
     min-height: 150px;
     background-color: rgb(61, 68, 83);
     padding-bottom: 10px;
     border-radius: 5px;
-    
     box-shadow: rgb(0 0 0 / 30%) 0px 4px 40px 0px;
-
     margin: 5px 10px 5px 0px;
 }
 
@@ -455,8 +389,6 @@ nav a:hover {
     padding-right: 10px;
     margin: 0;
 }
-
-
 
 .contact-container {
     display: flex;
@@ -476,20 +408,16 @@ nav a:hover {
 
 }
 
-
 .contact-card {
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-
     background-color: rgb(61, 68, 83);
     box-shadow: rgb(0 0 0 / 30%) 0px 4px 40px 0px;
     border-radius: 5px;
     padding: 0px 25px;
-
     margin: 5px;
-
     height: 75px;
     width: 150px;
 }
@@ -523,7 +451,6 @@ nav a:hover {
     padding-bottom: 30px;
     color: #e7efdd;
 }
-
 
 code {
     color: #e7efdd;
@@ -568,7 +495,6 @@ code {
     
     .course-card {
         margin: 5px 10px 5px 0px;
-       
         width: 360px;
         height: 175px;
     }
@@ -613,9 +539,6 @@ code {
     .front-content {
         margin: 10px;
     }
-    
-
-
 
     .second-row {
        margin-bottom: 50px;
@@ -636,8 +559,6 @@ code {
         margin: 20px;
     }
 
-
-
     .contact-card-container {
         flex-direction: column;
     }
@@ -647,25 +568,16 @@ code {
         width: 200px;
     }
 
-
-
-    
     .about-container {
         max-width: 540px;
         flex-direction: column;
         text-align: left;
-        
-
-
         margin: 10px;
-
     }
     
     .about-header-container { 
         max-width: 540px;
         text-align: left;
-
-
     }
     
     .coursework-container {
@@ -679,9 +591,6 @@ code {
         max-width: 540px;
     }
 
-
-
-    
     .coursework-header {
         margin-bottom: 20px;        
     }
@@ -705,31 +614,22 @@ code {
         flex-direction: column;    
         margin: unset;
         margin-bottom: 10px;
-
         width: unset;
         max-width: 540px;
         height: unset;
     }
-
-            
+    
     .work-card {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin: unset;
         margin-bottom: 10px;
-
-
         width: unset;
         height: unset;
         max-width: 540px;
     }
-
-
 }
-
-
-
 
 /* when screen is less than 768px wide */
 @media screen and (max-width: 612px) {

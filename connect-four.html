@@ -1,7 +1,5 @@
 <!doctype html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,7 +40,6 @@
 
             <!-- create a flex box that holds all of the cards -->
             <div class="project-container">
-                
                 
                 <div class="project-header-container">
                     <img src="images/connectfour-large.png" class="project-img">
@@ -91,22 +88,27 @@
                         hand corner and the winning pieces will become highlighted. To play again, hit the restart button. 
                     </p>
 
+                    <h3>OVERVIEW</h3>
+
+                    <p>
+                        I coded this game at the beginning of my computer science journey. This is an example of how not to implement connect four.
+                        To test if a player had won the game by getting four pieces in a row, I would checked every single possible combination of four
+                        pieces on the board to see if one of those combinations had been satisfied. This check would occur everytime a piece was placed. 
+                        This method is very ineffcient because I would check four positions where the last piece played was not even a part of the checked locations.
+                        A much better implementation would have been to check if there are four pieces in any direction, starting from the 
+                        most recent piece played. This method would have avoided checking every single combination on the board. 
+                    </p>
+
                     <br>
                     <br>
                     <br>
                 </div>
 
-
             </div>
         </div>
 
-
     </div>
-
 
     <script src="app.js"></script>
 </body>
-
-
-
 </html>
