@@ -13,7 +13,7 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter
-    .typeString('<strong><span style="font-size:20px;"><span style="color: #7289da;"><span style="letter-spacing: 5px;">HELLO</span></span></span></strong>')
+    .typeString('<strong><span style="font-size:20px;"><span style="color: #7289da;"><span style="letter-spacing: 5px;">HELLO!</span></span></span></strong>')
     .pauseFor(1000)
     .typeString('<br>')
     .typeString('<br>')
