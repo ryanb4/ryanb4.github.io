@@ -13,7 +13,7 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter
-    .typeString('<strong><span style="font-size:20px;"><span style="color: #7289da;"><span style="letter-spacing: 5px;">HELLO!</span></span></span></strong>')
+    .typeString('<strong><span style="font-size:30px;"><span style="color: #7289da;"><span style="letter-spacing: 5px;">HELLO!</span></span></span></strong>')
     .pauseFor(1000)
     .typeString('<br>')
     .typeString('<br>')
@@ -22,7 +22,7 @@ typewriter
     .typeString('<span style="color: #7289da;"> Computer Science</span> Student')
     .pauseFor(250)
     .typeString('<br>')
-    .typeString('at the University of North Carolina')
+    .typeString('at The University of North Carolina')
     .pauseFor(250)
     .typeString('<br>')
     .typeString('<span style="color: #7289da;">Chaepl Hill</span>')
