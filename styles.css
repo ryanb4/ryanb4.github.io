@@ -235,6 +235,7 @@ nav a:hover {
 
 .project-img {
     width: 300px;
+    border-radius: 5px;
 }
 
 .project-header {
